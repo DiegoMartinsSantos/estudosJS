@@ -1,0 +1,21 @@
+1) Qual é a diferença entre var, let e const no contexto de declarações de variáveis no JavaScript?
+
+R: var são variaveis que podem ser acessadas globalmente se declaradas fora de escopos, além disso elas são inicializadas primeiro durante a compilação, permitindo você atribuir um valor no seu codigo
+antes mesmo de declarar, porem se você tentar ler essa variavel antes de atribuir um valor sera retornado como undefined,
+Let são variaveis de blocos, só serão disponibilizdas dentro do bloco onde ela foi definida, além disso ela permite ser alterada. Já o Const é semelhante ao let em relação a regra de blocos porem seu valor
+deve ser informado durante sua declaração e seu valor nunca é alterado
+
+2) Explique o conceito de hoisting. Como ele afeta variáveis declaradas com var?
+R: o conceito de hoisting implica em inicializar as variaveis "Primeiro" durante a compilação, permitindo assim a variavel ser utilizada antes mesmo da sua declaração no código
+
+3) Dê um exemplo de como o JavaScript trata o null e undefined. São considerados iguais sob comparação estrita (===)?
+R: null em contextos de operaçõs matematicas são considerados como 0 como por exemplo console.log(null * 1) o resultado será zero, já o undefined em contexto numerico é tratado como NaN invalidando toda a operação e 
+retornando um NaN em console.log(Undefined * 1). Alem disso quando utilizamos o operador de comparação === eles são tratados como diferentes logo retonando false, porem dentro do contexto de == eles tem o mesmo valor retornando true
+
+4)Como o JavaScript converte tipos quando você tenta somar um número e uma string? Explique o que acontece quando você executa o código console.log('3' + 2);.
+R: Ao tentar somar numeros com strigs o javascript concatena a string, para realizar a operação devemos conversar a string que contem o numero para o tipo numero utilizando funções como
+parseInt e parseFloat e depois realizar a operação de soma
+
+5) Qual é o propósito do operador typeof e como você o utilizaria para verificar o tipo de uma variável?
+R: o typeof serve para retornar o tipo atual do valor passado para a função, um typeof("53") retona o tipo string ja typeof(53) retorna um tipo number
+
